@@ -1,5 +1,5 @@
 name: 'json-ls'
-version: '0.0.1'
+version: '0.0.2'
 description: 'LiveScript Flavoured JSON'
 homepage: 'https://github.com/blvz/json-ls'
 author: 'Rafael Belvederese'
@@ -18,7 +18,7 @@ scripts:
   test: 'make test'
 
 dependencies:
-  prelude-ls: '^1.1.1'
+  'prelude-ls': '^1.1.1'
 
 dev-dependencies:
   LiveScript: '^1.3.1'
