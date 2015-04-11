@@ -23,3 +23,4 @@ dependencies:
 dev-dependencies:
   LiveScript: '^1.3.1'
   mocha: '^2.2.4'
+  chai: '^2.2.0'
