@@ -76,7 +76,7 @@ describe 'stringify' ->
           name: 'two'
         * id: 3
           nested:
-            object1: 1
+            'object 1': 1
             object2: 2
             object3: 3
             arrays: [
@@ -102,7 +102,7 @@ describe 'stringify' ->
           name: 'two'
         * id: 3
           nested:
-            object1: 1
+            'object 1': 1
             object2: 2
             object3: 3
             arrays: [

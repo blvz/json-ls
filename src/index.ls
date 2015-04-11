@@ -31,15 +31,15 @@ function idt
   else
     '  ' * level
 
-function stringify-str => spc! + "'#{it.replace /'/g '\\\''}'"
-
+function str => "'#{it.replace /'/g '\\\''}'"
+function stringify-str => spc! + str ...
 function stringify-val => spc! + "#it"
 
 function stringify-obj
   s = brk!
   ++level
   parent := \Object
-  s += [ "#{idt!}#{dasherize key}:#{stringify-it value}" \
+  s += [ "#{idt!}#{stringify-key key}:#{stringify-it value}" \
           for key, value of it ] * '\n'
   --level
   s
@@ -72,3 +72,9 @@ function stringify-ls-ls
   --level
   s += '\n' + idt! + ']'
   s
+
+function stringify-key
+  switch
+  | it is /[\s\.]+/ => str it
+  | it is /^[a-z]+/ => dasherize it
+  | otherwise       => it
