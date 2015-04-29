@@ -1,5 +1,5 @@
 name: 'json-ls'
-version: '0.0.3'
+version: '0.0.4'
 description: 'LiveScript Flavoured JSON'
 homepage: 'https://github.com/blvz/json-ls'
 author: 'Rafael Belvederese'

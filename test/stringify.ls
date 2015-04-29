@@ -116,3 +116,11 @@ describe 'stringify' ->
             ]
       string-array: <[ like a boss ]>
       numeric-array: [ 1 2 3 4 ]
+
+  test 'special keys' ->
+    equal '''
+      'str-id': '0'
+      'its name': 'zero'
+    ''' stringify do
+      'str-id': '0'
+      'its name': 'zero'
