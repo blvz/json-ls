@@ -121,6 +121,8 @@ describe 'stringify' ->
     equal '''
       'str-id': '0'
       'its name': 'zero'
+      '01_01': 'zero one'
     ''' stringify do
       'str-id': '0'
       'its name': 'zero'
+      '01_01': 'zero one'

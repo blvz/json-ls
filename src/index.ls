@@ -75,6 +75,6 @@ function stringify-ls-ls
 
 function stringify-key
   switch
-  | it is /[\s\.\-]+/ => str it
-  | it is /^[a-z]+/   => dasherize it
-  | otherwise         => it
+  | it is /^\d|[\s\.\-]+/ => str it
+  | it is /^[a-z]+/       => dasherize it
+  | otherwise             => it
